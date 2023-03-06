@@ -4,7 +4,6 @@ using Company.Delivery.Domain.Dto;
 using Microsoft.EntityFrameworkCore;
 
 using System.Data;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Company.Delivery.Infrastructure;
 
@@ -45,7 +44,6 @@ public class WaybillService : IWaybillService
     public async Task<WaybillDto> UpdateByIdAsync(Guid id, WaybillUpdateDto data, CancellationToken cancellationToken)
     {
         // TODO: Если сущность не найдена по идентификатору, кинуть исключение типа EntityNotFoundException
-        //                                                                            ^^ ТУТ не сходится с тестом
 
         var dbContextOptions = new DbContextOptionsBuilder<DeliveryDbContext>();
         using (var db = new DeliveryDbContext(dbContextOptions.Options))

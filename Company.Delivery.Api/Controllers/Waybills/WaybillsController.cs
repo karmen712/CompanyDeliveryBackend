@@ -3,7 +3,6 @@ using Company.Delivery.Api.Controllers.Waybills.Response;
 using Company.Delivery.Domain;
 using Company.Delivery.Domain.Dto;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace Company.Delivery.Api.Controllers.Waybills;
 
